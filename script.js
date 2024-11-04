@@ -33,5 +33,26 @@ function colorSwitch(){
     document.getElementById("color2").value = color1
 }
 
+const infoI = document.getElementById("infoI")
+const infoDialog = document.getElementById("infoDialog")
+
+function info(){
+    const infoDialog = document.getElementById("infoDialog")
+    infoDialog.showModal()
+}
+
+// closing when outside of dialog is clicked
+infoDialog.addEventListener("click", e => {
+    const dialogDimensions = infoDialog.getBoundingClientRect()
+    if (
+      e.clientX < dialogDimensions.left ||
+      e.clientX > dialogDimensions.right ||
+      e.clientY < dialogDimensions.top ||
+      e.clientY > dialogDimensions.bottom
+    ) {
+      infoDialog.close()
+    }
+  })
+
 
 
