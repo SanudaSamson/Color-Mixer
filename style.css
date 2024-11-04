@@ -4,7 +4,7 @@
     padding: 0;
     font-family: "Montserrat", serif;
     font-weight: 600;
-    font-size: 1rem;
+    font-size: 1.1rem;
 }
 #display{
     width: 80px;
@@ -62,4 +62,10 @@
 .subContainer h1{
     font-size: 1.8rem;
 }
-
+.btnContainer i{
+    font-size: 19px;
+}
+button:nth-child(2){
+    border-radius: 100%;
+    height: fit-content;
+}
