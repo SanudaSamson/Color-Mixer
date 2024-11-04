@@ -26,6 +26,12 @@ function colorMixer(){
     // finalColor.value = hexValue
     // console.log(parseInt(rgb[0],16))
 }
+function colorSwitch(){
+    let color1 = document.getElementById("color1").value
+    let color2 = document.getElementById("color2").value
+    document.getElementById("color1").value = color2
+    document.getElementById("color2").value = color1
+}
 
 
 
