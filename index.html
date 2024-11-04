@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Web Design</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="mainContainer">
+        <div class="subContainer">
+            <center><h1>Color Mixer</h1></center>
+            <div class="section1">
+                <center><input type="color" id="color1" value="#ffffff"></center>
+                <center><input type="number" max="100" id="color1Num" value="50" min="0">
+                    <dialog id="infoDialog">
+                        <p>
+                            Enter how much you have mix the beside color. <br>
+                            The value will be convert into %. <br>
+                            Therefore your value should be between 0 & 100.
+
+                        </p>
+                        <form>
+                            <button formmethod="dialog">Close</button>
+                        </form>
+                    </dialog>
+                    <i class="fa-solid fa-circle-info" style="color: #000000;" id="infoI" onclick="info()"></i>
+                </center>
+                <center><input type="color" id="color2" value="#ffffff"></center>
+                <center><input type="number" max="100" id="color2Num" min="0" value="50">
+                <dialog id="infoDialog">
+                    <p>
+                        Enter how much you have mix the beside color. <br>
+                        The value will be convert into %. <br>
+                        Therefore your value should be between 0 & 100.
+                    </p>
+                    <form>
+                        <button formmethod="dialog">Close</button>
+                    </form>
+                </dialog>
+                <i class="fa-solid fa-circle-info" style="color: #000000;" id="infoI" onclick="info()"></i> 
+            </center>           
+            </div>
+            <div class="btnContainer">
+            
+            <button onclick="colorSwitch()" class="btnSwitch">
+                <i class="fa-solid fa-rotate"></i>
+            </button>
+            <button onclick="colorMixer()">Mix Colors</button>
+            </div>
+            <p id="display"></p>
+        </div>
+    </div>   
+
+
+</body>
+</html>
