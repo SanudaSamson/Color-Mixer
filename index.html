@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Web Design</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="mainContainer">
+        <div class="subContainer">
+            <center><h1>Color Mixer for Artists</h1></center>
+            <div class="section1">
+                <center><input type="color" id="color1" value="#ffffff"></center>
+                <center><input type="number" max="100" id="color1Num" value="50" min="0"></center>
+                <center><input type="color" id="color2" value="#ffffff"></center>
+                <center><input type="number" max="100" id="color2Num" min="0" value="50"></center>
+            </div>
+    
+            <!-- <input type="color" id="finalColor" value="#ffffff"> -->
+            <button onclick="colorMixer()">Mix Colors</button>
+            <p id="display"></p>
+        </div>
+    </div>   
+
+
+</body>
+</html>
